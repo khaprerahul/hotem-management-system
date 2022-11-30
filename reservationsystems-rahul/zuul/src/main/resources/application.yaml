@@ -1,0 +1,15 @@
+zuul:
+  routes:
+    GuestService:
+      path : /GuestService/**
+      url : http://localhost:8081
+    HotelService:
+      path: /HotelService/**
+      url: http://localhost:8082
+    ReservationService:
+      path: /ReservationService/**
+      url: http://localhost:8083
+    PaymentService:
+      path: /PaymentService/**
+      url: http://localhost:8084
+  sensitive-headers: Cookie,Set-Cookie

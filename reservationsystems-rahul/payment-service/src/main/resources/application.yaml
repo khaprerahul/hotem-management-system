@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+          zookeeper: localhost:2181
+      bindings:
+        payment-in:
+          destination: payment
+          content-type: application/json

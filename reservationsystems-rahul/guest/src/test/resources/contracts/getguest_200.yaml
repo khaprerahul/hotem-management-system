@@ -1,0 +1,16 @@
+request:
+  method: GET
+  url: "/guests/1"
+  #headers:
+  #  Authorization: "Bearer "
+response:
+  headers:
+    Content-Type: application/json
+  status: 200
+  body:
+    status: "OK"
+    actualResponse:
+      guestId: "1"
+      name: "Jayant"
+      email: "jayant@gmail.com"
+      #contactNumber: "123456789"
